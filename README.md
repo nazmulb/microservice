@@ -1,6 +1,6 @@
 # Microservice
 
-This is a very simple node.js microservice. Here I used `jest` for API testing which is a part of Integration testing.
+This is a very simple node.js microservice. Here I used `jest` for API testing which is a part of Integration testing. I also used `request-promise` and `supertest` for HTTP request. If you are testing 3rd party API then `request-promise` is preferable to use but if you need to know the test coverage of your code then you should use `supertest`.
 
 ## Jest:
 
