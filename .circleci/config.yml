@@ -46,9 +46,9 @@ jobs:
           command: npm run test-coverage
           when: always
       - store_test_results:
-          path: /coverage
+          path: ./coverage
       - store_artifacts:
-          path: /coverage
+          path: ./coverage
   
   publish:
       executor: node
