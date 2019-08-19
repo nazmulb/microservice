@@ -40,7 +40,7 @@ jobs:
           at: ~/app
       - run:
           name: Start to test using rp http
-          command: timeout 60 npm start
+          command: timeout 10 npm start
       - run:
           name: Test
           command: npm test
