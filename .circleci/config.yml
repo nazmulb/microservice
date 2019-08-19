@@ -43,7 +43,9 @@ jobs:
           command: npm test
       - run:
           name: Test coverage
-          command: npm run test-coverage
+          command: |
+            mkdir ~/coverage
+            npm run test-coverage
           when: always
       - store_test_results:
           path: ~/coverage
