@@ -42,7 +42,7 @@ jobs:
           name: Start to test using rp http
           command: |
             npm start
-            exit 0
+            echo "Running..."
       - run:
           name: Test
           command: npm test
