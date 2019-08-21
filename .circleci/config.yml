@@ -39,8 +39,11 @@ jobs:
       - attach_workspace:
           at: ~/app
       - run:
+          name: Start
+          command: npm start & echo "Start the microservice"
+      - run:
           name: Test
-          command: npm start & npm test
+          command: npm test
       - run:
           name: Test coverage
           command: npm run test-coverage
