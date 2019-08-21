@@ -4,4 +4,4 @@ ADD . /var/www/microservice
 WORKDIR /var/www/microservice
 RUN npm install
 CMD npm start
-EXPOSE 8080
+EXPOSE 8082
