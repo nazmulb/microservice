@@ -93,10 +93,10 @@ workflows:
             - test
           filters:
             branches:
-              only: master
+              only: develop
       - deploy:
           requires:
-            - publish
+            - build
           filters:
             branches:
               only: master
