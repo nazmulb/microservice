@@ -70,6 +70,8 @@ jobs:
   deploy:
       executor: int
       steps:
+        - attach_workspace:
+            at: ~/app
         - run:
             name: Deploy
             command: |
