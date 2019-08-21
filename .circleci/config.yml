@@ -5,6 +5,9 @@ executors:
       - image: 'circleci/node:9.8.0'
     shell: /bin/bash
     working_directory: ~/app
+  int:
+    machine:
+      docker_layer_caching: true
    
 orbs:
   docker-publish: circleci/docker-publish@0.1.4
@@ -65,11 +68,8 @@ jobs:
         - docker-publish/deploy # It would publish the images to docker hub.
 
   deploy:
-      executor: node
+      executor: int
       steps:
-        - attach_workspace:
-            at: ~/app
-        - setup_remote_docker
         - run:
             name: Deploy
             command: |
