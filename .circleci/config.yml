@@ -5,7 +5,7 @@ executors:
       - image: 'circleci/node:9.8.0'
     shell: /bin/bash
     working_directory: ~/app
-  int:
+  server:
     machine:
       docker_layer_caching: true
    
@@ -68,7 +68,7 @@ jobs:
         - docker-publish/deploy # It would publish the images to docker hub.
 
   deploy:
-      executor: int
+      executor: server
       steps:
         - checkout
         - run:
@@ -93,10 +93,10 @@ workflows:
             - test
           filters:
             branches:
-              only: develop
+              only: master
       - deploy:
           requires:
-            - build
+            - publish
           filters:
             branches:
               only: master
