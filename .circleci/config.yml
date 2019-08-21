@@ -74,6 +74,9 @@ jobs:
             name: Deploy
             command: |
               sh ./.circleci/deploy.sh
+        - run:
+            name: Health Check
+            command: |
               sh ./is_healthy.sh
 workflows:
   version: 2
