@@ -6,4 +6,4 @@ docker run -d -p 8082:8080 --name nazmul_micro nazmulb/microservice
 
 sleep 5
 
-curl http://localhost:8082/about
+docker exec nazmul_micro bash -c 'curl http://localhost:8082/about'
