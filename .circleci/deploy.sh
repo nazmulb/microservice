@@ -2,4 +2,4 @@
 set -e
 
 docker pull nazmulb/microservice
-docker run --rm -d -p 8082:8080 --name nazmul_micro nazmulb/microservice
+docker run -d -p 8082:8080 --name nazmul_micro nazmulb/microservice

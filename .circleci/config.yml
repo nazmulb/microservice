@@ -74,6 +74,10 @@ jobs:
             name: Deploy
             command: |
               sh ./.circleci/deploy.sh
+        - run:
+            name: Health Check
+            command: |
+              curl http://localhost:8082/about
 workflows:
   version: 2
   build_and_test:
