@@ -1,14 +1,19 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node.js microservice with Jest",
   "scripts": {
     "start": "./node_modules/.bin/nodemon main.js",
     "test": "jest",
     "test-coverage": "jest --coverage"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "microservice",
+    "api testing",
+    "integration testing",
+    "jest"
+  ],
+  "author": "Nazmul Basher <nazmul.basher@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
