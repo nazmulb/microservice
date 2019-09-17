@@ -15,7 +15,7 @@ We need the following:
 
 Please clone this repo and run the following commands:
 
-```
+```sh
 git clone https://github.com/nazmulb/microservice.git
 cd microservice
 npm i
@@ -23,18 +23,18 @@ npm i
 
 ### Running App:
 
-```cmd
+```sh
 npm start
 ```
 
 ### Running Tests:
 
-```cmd
+```sh
 npm test
 ```
 
 ### Test Coverage Report:
 
-```cmd
+```sh
 npm run test:coverage
 ```
